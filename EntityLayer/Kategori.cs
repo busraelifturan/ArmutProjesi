@@ -19,3 +19,5 @@ namespace EntityLayer
         public string KategoriAdi { get; set; }
     }
 }
+
+//Test atışı...
