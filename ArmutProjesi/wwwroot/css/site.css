@@ -23,3 +23,14 @@ nav{
     position:fixed;
 }
 
+#bg-fixed{
+    background-position:center;
+}
+#search-div {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    display: block;
+}
