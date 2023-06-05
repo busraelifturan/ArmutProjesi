@@ -15,5 +15,9 @@ namespace EntityLayer
         public string? Sifre { get; set; }
 
         public bool? Aktif { get; set; }
+
+        public int KullaniciId { get; set; }
+        public virtual Kullanici? Kullanici { get; set; }
+
     }
 }

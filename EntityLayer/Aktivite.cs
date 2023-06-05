@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Armut.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.Design;
 using System.Linq;
 using System.Net;
+using System.Reflection;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -31,8 +34,11 @@ namespace EntityLayer
 
         //*************
 
+  
         public virtual Kullanici TeklifIsteyen { get; set; }   // iş için teklif isteyen kullanıcı
         public virtual List<Kullanici> TeklifVeren { get; set; } //iş için teklif verenler
+
+        public virtual IEnumerable<KullaniciRol>? KullaniciRol { get; set; }
 
     }
 }
